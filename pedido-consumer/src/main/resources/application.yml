@@ -1,0 +1,22 @@
+server:
+  port: 9001
+
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: pedidos
+      username: admin
+      password: admin
+      authentication-database: admin
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+# RabbitMQ
+rabbitmq:
+  queues:
+    pedido: pedido.created
